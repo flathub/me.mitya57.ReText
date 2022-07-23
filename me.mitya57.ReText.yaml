@@ -1,6 +1,6 @@
 app-id: me.mitya57.ReText
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
 base-version: 5.15-21.08
@@ -24,13 +24,13 @@ modules:
   - name: retext
     buildsystem: simple
     sources:
-    - type: git
-      url: https://github.com/retext-project/retext.git
-      tag: 7.2.3
-      commit: 82cd44b44e06edd737a3e5a8af9ff69c0cadcd2a
-      x-checker-data:
-        type: git
-        tag-pattern: ^([\d.]+)$
+      - type: git
+        url: https://github.com/retext-project/retext.git
+        tag: 8.0.0
+        commit: f481db01f1f17ec7b752bc575a904cc98aedb04a
+        x-checker-data:
+          type: git
+          tag-pattern: ^([\d.]+)$
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/
       - cp -r icons/*.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/
