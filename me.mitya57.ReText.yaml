@@ -33,4 +33,4 @@ modules:
           tag-pattern: ^([\d.]+)$
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST} --root=/
-      - cp -r icons/*.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/
+      - cp -r ReText/icons/*.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/
