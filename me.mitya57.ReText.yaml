@@ -26,8 +26,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/retext-project/retext.git
-        tag: 8.0.0
-        commit: f481db01f1f17ec7b752bc575a904cc98aedb04a
+        tag: 8.0.1
+        commit: 9ab783f766ab3d18d2d6eed05a168577a64d7ddc
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
