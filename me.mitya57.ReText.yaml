@@ -1,11 +1,16 @@
 app-id: me.mitya57.ReText
 runtime: org.kde.Platform
-runtime-version: 6.3
+runtime-version: 6.5
 sdk: org.kde.Sdk
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: 6.3
+base-version: 6.5
 command: retext
 rename-icon: retext
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh
+build-options:
+  env:
+    - BASEAPP_REMOVE_WEBENGINE=1
 finish-args:
   - --device=dri
   - --share=network
@@ -13,6 +18,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --filesystem=home
+  - --env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess
 
 modules:
   # generated with flatpak-pip-generator
