@@ -2,13 +2,13 @@
     "name": "python3-Markups",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"Markups\" --no-build-isolation"
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"Markups[restructuredtext,markdown]>=4.0\" --no-build-isolation"
     ],
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/27/72/28b1d8ac27cbf30322ad17d825f793f355dedefbbddfbbe62ca44ad53039/Markups-3.1.1-py3-none-any.whl",
-            "sha256": "ab6e8516051cdcd953d25e8d7b753ba63d03a55d23fe4b01f93a62ab4769baae"
+            "url": "https://files.pythonhosted.org/packages/1d/37/cac1dea3f48e0af477b56d2c5b1a1b6e23a8ae62b655586075ca951bc022/Markups-4.1.0-py3-none-any.whl",
+            "sha256": "cb7efceddb570191a740b52fc305742f581c0646a5df997d586068763cceb1ac"
         },
         {
             "type": "file",
@@ -17,18 +17,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a0/a1/b153a0a4caf7a7e3f15c2cd56c7702e2cf3d89b1b359d1f1c5e59d68f4ce/importlib_metadata-4.8.3-py3-none-any.whl",
-            "sha256": "65a9576a5b2d58ca44d133c42a241905cc45e34d2c06fd5ba2bafa221e5d7b5e"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/45/6b/44f7f8f1e110027cf88956b59f2fad776cca7e1704396d043f89effd3a0e/typing_extensions-4.1.1-py3-none-any.whl",
-            "sha256": "21c85e0fe4b9a155d0799430b0ad741cdce7e359660ccbd8b530613e8df88ce2"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/bd/df/d4a4974a3e3957fd1c1fa3082366d7fff6e428ddb55f074bf64876f8e8ad/zipp-3.6.0-py3-none-any.whl",
-            "sha256": "9fe5ea21568a0a70e50f273397638d39b03353731e6cbbb3fd8502a33fec40bc"
+            "url": "https://files.pythonhosted.org/packages/54/ed/79a089b6be93607fa5cdaedf301d7dfb23af5f25c398d5ead2525b063e17/pyyaml-6.0.2.tar.gz",
+            "sha256": "d584d9ec91ad65861cc08d42e834324ef890a082e591037abe114850ff7bbc3e"
         }
     ]
 }
